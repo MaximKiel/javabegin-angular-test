@@ -67,7 +67,10 @@
               "buildTarget": "angular-test:build:production"
             },
             "development": {
-              "buildTarget": "angular-test:build:development"
+              "buildTarget": "angular-test:build:development",
+              "ssl": true,
+              "sslKey": "src/assets/ssl/localhost.pem",
+              "sslCert": "src/assets/ssl/localhost.cer"
             }
           },
           "defaultConfiguration": "development"
@@ -97,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
